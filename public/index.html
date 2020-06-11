@@ -29,7 +29,10 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <h3>
-      <a href="https://dev-u1qsiqks.auth0.com/authorize?response_type=code&client_id=SEL3PyuoV6niGnsmpER2QDK4JLZ9Hteo&redirect_uri=http://localhost:3001/signedin&scope=openid%20profile&audience=http://localhost:3000&state=xyzABC123">
+      <!-- TODO see this: https://auth0.com/docs/api-auth/tutorials/implicit-grant -->
+      <a
+        href="audience=http://localhost:3000&scope=openid%20profile&response_type=id_token%20token&client_id=SEL3PyuoV6niGnsmpER2QDK4JLZ9Hteo&redirect_uri=http://localhost:3001/signedin&nonce=12345789&state=xyzABC123"
+      >
         Sign In
       </a>
     </h3>
